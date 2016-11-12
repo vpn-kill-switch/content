@@ -16,6 +16,10 @@ For [Mac OS X](https://apple.com/mac/) users PF can be the best option.
 To create a **kill switch** using PF, a [configuration file](https://www.openbsd.org/faq/pf/)
 needs to be created.
 
+> TL;DR
+[killswitch](/post/killswitch/) is a CLI command that can help finding the
+active interfaces, create & load the pf rules.
+
 Example of a ``killswitch.pf.conf`` configuration file:
 
 > The file can be creted on the user $HOME directory and have any name.

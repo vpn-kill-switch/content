@@ -13,12 +13,12 @@ to many other operating systems. https://en.wikipedia.org/wiki/PF_(firewall)
 
 For [Mac OS X](https://apple.com/mac/) users PF can be the best option.
 
-To create a **kill switch** using PF, a [configuration file](https://www.openbsd.org/faq/pf/)
-needs to be created.
-
 > TL;DR
 [killswitch](/post/killswitch/) is a CLI command that can help finding the
 active interfaces, create & load the pf rules.
+
+To create a **kill switch** using PF, a [configuration file](https://www.openbsd.org/faq/pf/)
+needs to be created.
 
 Example of a ``killswitch.pf.conf`` configuration file:
 

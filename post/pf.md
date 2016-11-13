@@ -6,19 +6,19 @@ tags = ["BSD", "apple", "macOS", "pf"]
 
 +++
 
+For [Mac OS X](https://apple.com/mac/) & BSD users PF can be the best option to create
+a **kill switch**.
+
 > PF (Packet Filter, also written pf) is a BSD licensed stateful packet filter,
 a central piece of software for firewalling. It is comparable to netfilter
 (iptables), ipfw and ipfilter. PF was developed for OpenBSD, but has been ported
 to many other operating systems. https://en.wikipedia.org/wiki/PF_(firewall)
 
-For [Mac OS X](https://apple.com/mac/) users PF can be the best option.
+To create a **kill switch** using PF, a [configuration file](https://www.openbsd.org/faq/pf/)
 
 > TL;DR
 [killswitch](/post/killswitch/) is a CLI command that can help finding the
-active interfaces, create & load the pf rules.
-
-To create a **kill switch** using PF, a [configuration file](https://www.openbsd.org/faq/pf/)
-needs to be created.
+active interfaces, create and load pf rules.
 
 Example of a ``killswitch.pf.conf`` configuration file:
 

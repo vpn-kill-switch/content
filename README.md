@@ -13,22 +13,30 @@ First install HUGO: https://gohugo.io/overview/installing/
 
 Clone the template repository:
 
-    $ git clone git@github.com:vpn-kill-switch/template.git $HOME/vpn-kill-switch.com
+```sh
+$ git clone git@github.com:vpn-kill-switch/template.git $HOME/vpn-kill-switch.com
+```
 
 Clone the content for the site as a submodule:
 
-    $ cd $HOME/vpn-kill-switch.com
-    $ git submodule add -b master git@github.com:vpn-kill-switch/content.git content
+```sh
+$ cd $HOME/vpn-kill-switch.com
+$ git submodule add -b master git@github.com:vpn-kill-switch/content.git content
+```
 
 Symlink the static directory so images can be displayed:
 
-    $ cd $HOME/vpn-kill-switch.com
-    $ ln -s content/static .
+```sh
+$ cd $HOME/vpn-kill-switch.com
+$ ln -s content/static .
+```
 
 Start the server:
 
-    $ cd $HOME/vpn-kill-switch.com
-    $ hugo -w server
+```sh
+$ cd $HOME/vpn-kill-switch.com
+$ hugo -w server
+```
 
 Create a post:
 
@@ -36,7 +44,9 @@ Create a post:
 
 Preview:
 
-    $ open http://localhost:1313/
+```sh
+$ open http://localhost:1313/
+```
 
 
 ## pull request

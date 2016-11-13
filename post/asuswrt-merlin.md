@@ -3,7 +3,7 @@ date = "2016-11-13T17:12:38+01:00"
 description = "kill-switch on asus router"
 title = "asuswrt merlin"
 tags = ["asus", "merlin", "routers", "openvpn"]
-draft = "yes"
+draft = true
 
 +++
 

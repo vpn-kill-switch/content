@@ -6,8 +6,10 @@ tags = ["BSD", "apple", "macOS", "pf"]
 
 +++
 
-For [Mac OS X](https://apple.com/mac/) & [BSD](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution)
-users PF can be the best option to create a **kill switch**.
+For [Mac OS X](https://apple.com/mac/) &
+[BSD](https://en.wikipedia.org/wiki/Berkeley_Software_Distribution)
+users [PF](https://www.freebsd.org/doc/handbook/firewalls-pf.html)
+can be the best option to create a **kill switch**.
 
 > PF (Packet Filter, also written pf) is a BSD licensed stateful packet filter,
 a central piece of software for firewalling. It is comparable to netfilter

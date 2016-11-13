@@ -85,4 +85,4 @@ are not available to connect, re-connect the VPN and check the IP using any of t
 
 ---
 
-More info: https://github.com/RMerl/asuswrt-merlin/wiki/Policy-based-routing-(manual-method)
+More info: <https://github.com/RMerl/asuswrt-merlin/wiki/Policy-based-routing-(manual-method)>

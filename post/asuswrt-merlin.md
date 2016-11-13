@@ -48,50 +48,6 @@ Enable the option ``Enable JFFS custom scripts and configs`` located in
 
 ![jffs custom scripts](/img/asus-jffs-custom-scripts.png)
 
-# openvpn-event
-
-Via SSH login to your router and edit/create the file ``/jffs/scripts/openvpn-event``
-
-```sh
-#!/bin/sh
-
-sleep 2
-
-for i in /proc/sys/net/ipv4/conf/*/rp_filter ; do
-  echo 0 > $i
-done
-
-ip route flush table 100
-ip route del default table 100
-ip rule del fwmark 1 table 100
-ip route flush cache
-iptables -t mangle -F PREROUTING
-
-ip route show table main | grep -Ev ^default | grep -Ev tun11\
-  | while read ROUTE ; do
-      ip route add table 100 $ROUTE
-done
-
-ip route add default table 100 via $(nvram get wan_gateway)
-ip rule add fwmark 1 table 100
-ip route flush cache
-
-iptables -t mangle -A PREROUTING -i br0 -j MARK --set-mark 1
-
-iptables -t mangle -A PREROUTING -i br0 -m iprange --src-range 192.168.x.xxx -j MARK --set-mark 0
-
-exit 1
-```
-
-Each device has the following command:
-
-```sh
-iptables -t mangle -A PREROUTING -i br0 -m iprange --src-range 192.168.x.xxx -j MARK --set-mark 0
-```
-
-All you need to do is replace `192.168.1.xxx` with the actual IP address of each
-of the devices you want to include to the VPN.
-
 # firewall-start
 
 Via SSH login to your router and edit/create the file ``/jffs/scripts/firewall-start``

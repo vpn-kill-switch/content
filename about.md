@@ -30,4 +30,4 @@ you vulnerable.
 
 The goal of this site is to share best practices about how to implement,
 create a **kill switch** not depending on any VPN provider/application so it
-doesn't mater if the VPN drops crashes you will not be vulnerable.
+doesn't mater if the VPN drops the connection or crashes you will not be vulnerable.

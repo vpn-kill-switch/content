@@ -1,6 +1,6 @@
 # How to contribute
 
-You can contribute in multiple ways, submiting code, creating a post, update
+You can contribute in multiple ways, submiting code, creating and update
 existing posts, etc.
 
 ## Creating & updating posts

@@ -23,17 +23,22 @@ Download from https://dl.bintray.com/nbari/killswitch/ or compile from source: h
 **killswitch** helps to find the active interfaces and creates a
 ``.killswitch.pf.conf`` file.
 
-The current version is very simple it requires to specify the VPN endpoint IP
-``-ip`` and it can also load the generated rules by specifying option ``-e``
+The current version requires to specify the VPN endpoint IP
+``-ip`` and it can also load the generated rules by specifying option ``-e``.
+
+If using the ``-i`` option it will print the current active interfaces, MAC
+address, IP and the current external public IP address.
 
 ```sh
 $ killswitch -h
 Usage of killswitch:
   -e Enable
         Enable load the pf rules
+  -i Info
+        Info print active interfaces and public IP address
   -ip IPv4
         VPN peer IPv4
-  -v    Print version: 0.1.0
+  -v    Print version: 0.2.0
 ```
 
 If using option ``-e`` [sudo](https://en.wikipedia.org/wiki/Sudo) may be required:

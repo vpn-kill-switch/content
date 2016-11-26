@@ -30,13 +30,24 @@ Example of a ``killswitch.pf.conf`` configuration file:
 int_en1 = "en1"
 vpn_utun1 = "utun1"
 vpn_ip = "1.2.3.4"
+
 set block-policy drop
 set ruleset-optimization basic
 set skip on lo0
+
 block all
-pass on $int_en1 proto udp to 224.0.0.251 port 5353
-pass on $int_en1 proto udp from any port 67 to any port 68
-pass on $int_en1 inet proto icmp all icmp-type 8 code 0
+
+# dns
+pass quick proto udp from any to any port 53 keep state
+
+# Allow broadcasts on internal interface
+pass from any to 255.255.255.255 keep state
+pass from 255.255.255.255 to any keep state
+
+# Allow multicast
+pass protp udp from any to 224.0.0.0/4 keep state
+pass proto udp from 224.0.0.0/4 to any keep state
+
 pass on $int_en1 proto {tcp, udp} from any to $vpn_ip
 pass on $vpn_utun1 all
 ```

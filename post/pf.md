@@ -148,3 +148,12 @@ default            192.168.1.1        UGSc            7        2     en1
 143.255.56.99/32   192.168.1.1        UGSc            2        0     en1
 143.255.56.99      192.168.1.1        UGHWIi          2     5239     en1
 ```
+
+If you know your current gateway (for example `192.168.1.1`) this also can give
+the current endpoint ip (`93.15.82.54`) in this case:
+
+```sh
+$ netstat -rn | grep 192.168.1.1
+default            192.168.1.1        UGScI          52        0     en1
+93.15.82.54        192.168.1.1        UGHS            4  1112367     en1
+```

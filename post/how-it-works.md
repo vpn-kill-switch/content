@@ -5,7 +5,7 @@ title = "How it works"
 
 +++
 
-**killswitch**, in a nutshell, once enable will allow only traffic within the
+**killswitch**, in a nutshell, once enabled, it will allow only traffic within the
 VPN, if the [VPN goes down](/about) or it crashes, your traffic / IP address will not
 become exposed.
 

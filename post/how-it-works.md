@@ -12,7 +12,7 @@ become exposed.
 Before enabling the kill switch `killswitch -e` the VPN needs to be up and running.
 
 By just running `killswitch`, information about the existing interfaces and
-public IP address is printed, example:
+public IP address is printed. Example:
 
 ```html
 $ killswitch
@@ -45,7 +45,7 @@ See more: https://en.wikipedia.org/wiki/DNS_leak
 
 # Enable
 
-Once VPN is un and running, run:
+Once VPN is up and running, run:
 
     $ sudo killswitch -e
 

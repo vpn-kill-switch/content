@@ -24,7 +24,7 @@ active interfaces, create and load pf rules.
 
 Example of a ``killswitch.pf.conf`` configuration file:
 
-> The file can be creted on the user $HOME directory and have any name.
+> The file can be created on the user $HOME directory and have any name.
 
 ```sh
 int_en1 = "en1"
@@ -150,7 +150,7 @@ default            192.168.1.1        UGSc            7        2     en1
 ```
 
 If you know your current gateway (for example `192.168.1.1`) this also can give
-the current endpoint ip (`93.15.82.54`) in this case:
+the current endpoint IP (`93.15.82.54`) in this case:
 
 ```sh
 $ netstat -rn | grep 192.168.1.1

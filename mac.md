@@ -9,8 +9,12 @@ hidden = true
 
 To install on macOS:
 
-    $ brew tap vpn-kill-switch/killswitch
+```sh
+$ brew tap vpn-kill-switch/killswitch
+```
 
 Next:
 
-    $ brew install killswitch
+```sh
+$ brew install killswitch
+```

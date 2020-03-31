@@ -11,14 +11,7 @@ tags = ["cli", "tools", "brew"]
 
 To install on Mac OS X:
 
-    $ brew tap vpn-kill-switch/killswitch
-
-Next:
-
     $ brew install killswitch
-
-Download from https://dl.bintray.com/nbari/killswitch/ or compile from source: https://github.com/vpn-kill-switch/killswitch
-
 
 **killswitch** helps to find the active interfaces and creates a
 ``.killswitch.pf.conf`` file.
